@@ -1,0 +1,20 @@
+$sampleUrls = @'
+# Sample URLs for testing the converter
+# Lines starting with # are comments and will be ignored
+
+# News and Information
+https://www.google.com
+https://www.microsoft.com
+https://www.github.com
+
+# Documentation Examples
+https://docs.microsoft.com/powershell/
+https://stackoverflow.com/questions/tagged/powershell
+
+# Add your own URLs below:
+# https://your-website.com
+# https://another-site.com/page
+'@
+
+$sampleUrls | Out-File -FilePath "examples\sample-urls.txt" -Encoding UTF8
+Write-Host "Sample URLs file created" -ForegroundColor Green
